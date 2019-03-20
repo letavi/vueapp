@@ -58,7 +58,7 @@ Because we use Webpack to manage Javascript code, so in `application.html.erb`, 
 
 Final, `rails server` to see result!
 
-III. Discover Vue
+III. Basic Vue
 
 1. v-bind: Bind element/attribute.
 
@@ -67,3 +67,5 @@ III. Discover Vue
 3. v-for: Through each item on an Array.
 
 4. v-on: Attaches a method to event listeners.
+
+5. v-model: Creates a two-way binding between form input and app state.
