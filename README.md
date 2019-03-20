@@ -60,8 +60,10 @@ Final, `rails server` to see result!
 
 III. Discover Vue
 
-1. v-bind: Bind element/attribute
+1. v-bind: Bind element/attribute.
 
 2. v-if: Toggle the presence of an element depending on its value.
 
-3. v-for:  Through each item on an Array.
+3. v-for: Through each item on an Array.
+
+4. v-on: Attaches a method to event listeners.
