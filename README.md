@@ -58,6 +58,8 @@ Because we use Webpack to manage Javascript code, so in `application.html.erb`, 
 
 Final, `rails server` to see result!
 
-III. Bind attributes, element in Vue
+III. Discover Vue
 
-1. v-bind
+1. v-bind: Bind element/attribute
+
+2. v-if: Toggle the presence of an element depending on its value.
