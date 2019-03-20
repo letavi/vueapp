@@ -63,3 +63,5 @@ III. Discover Vue
 1. v-bind: Bind element/attribute
 
 2. v-if: Toggle the presence of an element depending on its value.
+
+3. v-for:  Through each item on an Array.
