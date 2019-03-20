@@ -21,3 +21,39 @@ II. Hello Vue
 
 In `routes.rb`, define: `root 'pages#welcome'`
 
+3. Hello Vue
+
+When using Webpack with Rails, Rails add `app/javascript/packs/hello_vue.js`, this file contains some code. We can customize this file by comment or delete and add some bellow code:
+
+```
+import Vue from 'vue/dist/vue.esm'
+
+document.addEventListener('DOMContentLoaded', () => {
+  var app = new Vue({
+    el: '#app',
+    data: {
+      message: 'Hello Vue!'
+    }
+  })
+})
+```
+
+This code create a object belongs to Vue and we pass `el` and `data` options.
+
+`el` this is element, which seen by Vue.
+
+In `welcome.html.erb` :
+
+```
+<h1>Welcome Page</h1>
+
+<div id="app">
+  {{ message }}
+</div>
+```
+
+The `message` in `data` block on the Vue app will appear on `{{ message }}`
+
+Because we use Webpack to manage Javascript code, so in `application.html.erb`, we change `<%= javascript_include_tag 'application' %>` to `<%= javascript_pack_tag 'hello_vue' %>`
+
+Final, `rails server` to see result!
