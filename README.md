@@ -11,3 +11,13 @@ I. Create a Rails application
 2. Pass `--webpack=vue` option to use Webpack to manage Javascript code. Webpack has been adopted by Rails starting 5.1 to have better support for JavaScript frameworks.
 
 3. When using Asset Pipeline, you put your Javascript code on `app/assets/javascript` . With Webpack, you'll use `app/javascript/packs` instead.
+
+II. Hello Vue
+
+1. Create pagescontroller with welcome action.
+`rails generate controller Pages welcome`
+
+2. Set the welcome action as the root of the page.
+
+In `routes.rb`, define: `root 'pages#welcome'`
+
