@@ -57,3 +57,7 @@ The `message` in `data` block on the Vue app will appear on `{{ message }}`
 Because we use Webpack to manage Javascript code, so in `application.html.erb`, we change `<%= javascript_include_tag 'application' %>` to `<%= javascript_pack_tag 'hello_vue' %>`
 
 Final, `rails server` to see result!
+
+III. Bind attributes, element in Vue
+
+1. v-bind

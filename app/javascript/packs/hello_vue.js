@@ -7,4 +7,11 @@ document.addEventListener('DOMContentLoaded', () => {
       message: 'Hello Le Thanh Viet, welcome to Vuejs'
     }
   })
+
+  var app2 = new Vue({
+    el: '#app-2',
+    data: {
+      message: 'You loaded this page on ' + new Date().toLocaleString()
+    }
+  })
 })
